@@ -38,18 +38,19 @@ export const Main = () => {
 
     useEffect(() => {
         if (fromCurrency != null && toCurrency != null) {
-            fetch(`${baseUrl}?base=${fromCurrency}&symbols=${toCurrency}`)
+            fetch(`${baseUrl}&base=${fromCurrency}&symbols=${toCurrency}`)
                 .then(res => res.json())
                 .then(data => setExchange(data.rates[toCurrency]))
+                .catch(error => console.error(error.reason, "ERROR"))
         }
     }, [fromCurrency, toCurrency])
 
-    const handleFromSumChange = (e) => {
-        setSum(e.target.value)
+    const handleFromSumChange = (event) => {
+        setSum(event.target.value)
         setSumFromCurrency(true)
     }
-    const handleToSumChange = (e) => {
-        setSum(e.target.value)
+    const handleToSumChange = (event) => {
+        setSum(event.target.value)
         setSumFromCurrency(false)
     }
 

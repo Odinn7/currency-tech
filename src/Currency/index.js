@@ -1,7 +1,13 @@
 import React from 'react';
 
 export const Currency = (props) => {
-    const {currency, selectedCurrency, onChangeCurrency, sum, onChangeSum} = props;
+    const {
+        currency, 
+        selectedCurrency, 
+        onChangeCurrency, 
+        sum, 
+        onChangeSum
+    } = props;
 
     return (
         <div>

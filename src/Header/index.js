@@ -19,14 +19,14 @@ export const Header = () => {
             <ul>
                 <li>
                     {currency.map(curr =>
-                        <div>
+                        <div key={curr}>
                             UAH : {curr.UAH} = USD : {curr.USD}
                         </div>
                     )}
                 </li>
                 <li>
                     {currency.map(curr =>
-                        <div>
+                        <div key={curr}>
                             UAH : {curr.UAH} = EUR : {curr.EUR}
                         </div>
                     )}
