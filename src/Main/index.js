@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Currency} from "../Currency";
 
-import './index.css'
+import './styles.css'
 
 export const baseUrl = "http://api.exchangeratesapi.io/v1/latest?access_key=cfc07eb69b9bab8ba87eacec8b7c495d"
 
@@ -63,7 +63,6 @@ export const Main = () => {
                 onChangeSum={handleFromSumChange}
                 sum={fromSum}
             />
-            =
             <Currency
                 currency={currency}
                 selectedCurrency={toCurrency}

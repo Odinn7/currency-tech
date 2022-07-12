@@ -1,0 +1,1 @@
+.header{width:100%;height:10vh;display:flex;justify-content:space-around;align-items:center;border-bottom:1px solid #0078d4}.header__container{display:block}.header__container__wrapper{display:flex;width:100%}.header__container__wrapper__currency{display:flex}.header__container__wrapper__currency-option{color:#0078d4}
